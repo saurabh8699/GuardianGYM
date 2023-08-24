@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Gym - Login</title>
+    <link rel="stylesheet" href="index.css">
+    <!-- <script src="./function.js"></script> -->
+    <style>
+      * {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+body{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    min-height: 100vh;
+    align-items: center;
+    background: url('home.png') no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background-color: rgba(0, 0, 0, .3);
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.header .logo span {
+    color: yellow;
+}
+
+.header .logo i {
+    color: yellow;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color:  green;
+}
+
+.btn {
+    font-family: 'Nunito', sans-serif;
+    margin: 0px 9px;
+    background-color: red;
+    color: white;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+.container{
+    font-family: 'Nunito', sans-serif;
+    color: white;
+    border: 2px solid white;
+    margin: 106px 80px;
+    padding: 75px;
+    width: 40%;
+    border-radius: 50px;
+    text-align: center;
+
+    /* margin-right: 100px; */
+}
+
+/* .form-group input{
+    font-family: 'Nunito', sans-serif;
+    text-align: center;
+    display: block;
+    width: 250px;
+    padding: 1px;
+    border: 2px solid red;
+    margin: 8px auto;
+    font-size: 20px;
+    border-radius: 10px;
+} */
+
+.form-group {
+    text-align: center;
+    display: block;
+    font-size: 20px;
+}
+
+.form-group input {
+    background-color: whitesmoke;
+    border: 2 px solid red;
+    border-radius: 10px;
+    margin: 8px auto;
+    width: 250px;
+    padding: 5px;
+    font-size: 20px;
+}
+
+/* .container .login {
+    border-radius: 50px;
+    background: #120d73;
+    box-shadow:  5px 5px 10px #07052e,
+                 -5px -5px 10px #1d15b8;
+    padding: 10px;
+} */
+
+.container .login {
+    border-radius: 50px;
+    background: #0d0d3f;
+    box-shadow:  6px 6px 12px #050519,
+             -6px -6px 12px #151565;
+    padding: 20px;
+}
+
+.container h1 {
+    color: red;
+    font-size: 32px;
+}
+
+.container p {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+
+:root {
+
+    --black: #000;
+    --gray: #666;
+    --box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .1);
+    --green-border: .1rem solid var(--green);
+    --gray-border: .1rem solid var(--gray);
+    --bg-1: rgb(3, 3, 3);
+    --bg-2: rgb(7, 7, 7);
+    --slide-bg: rgb(14, 13, 13);
+    --slide-p: rgb(141, 131, 131);
+}
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="#home" class="logo"><i class="fas fa-dumbbell"></i> Guardian<span>GYM</span></a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="#home">home</a>
+            <a href="#about">about</a>
+            <!-- <a href="#features">features</a>
+            <a href="#offers">offers</a>
+            <a href="#reviews">reviews</a> -->
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+    <div class="container">
+      <h1>THE GRIND NEVER STOPS <i class='fas fa-fire-alt'></i></h1><br><br><br><br>
+      <div class="login"><p>LOGIN</p><br><br>
+        <form action="connect.php" method="post">
+        <div class="form-group">
+          Username <input type="text" id = "name" name="name" required placeholder="Username">
+        </div>
+        <div class="form-group">
+          <!-- pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" -->
+          Password <input type="password" name="psw" id = "psw" 
+          title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="Password">
+          <br><br>
+        </div>
+        <p style="font-size: 15px;">*Wrong username or password</p><br>
+        <input type="submit" class="btn" name = "submit" value = "submit">
+        </form>
+        <br><br>
+        <!-- <button class="btn">Submit</button> -->
+    </div>
+    </div>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

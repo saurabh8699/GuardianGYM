@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gaurdina Gym - Home</title>
+    <!-- <link rel="stylesheet" href="css/home.css"> -->
+    <link rel="stylesheet" href="home.css">
+</head>
+<body style="background-image: url('img/home.png');">
+<!-- <body style="background-color: black;">     -->
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-arrow-left"></i> Login</a>
+        <!-- <div id="menu-btn" class="fas fa-bars"></div> -->
+        <nav class="navbar">
+            <a href="#about">about</a>
+            <a href="#offers">plans</a>
+            <!-- <a href="#features">features</a>
+            <a href="#offers">offers</a>
+            <a href="#reviews">reviews</a> -->
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+    <section class="aboutUsSection" id="about">
+    <br><br><br><br><br><br><br><br><br>
+        <div class="logo">About Guardian<span>GYM </span><i class="fas fa-dumbbell"></i></div>
+        <div class="textAndImg">
+            <div class="image" style="display:inline;"><img src="img/gym.jpg" style="width:600px; height:400px; "></div>
+            <div class="aboutUsText"> 
+                <p>
+                    <span>GuardianGYM</span> is a premium Health and Fitness space in the heart of the
+                    city. We provide our members with the best workouts coupled with personal training to achieve their fitness goals. Our
+                    memberships are designed for those who love to train hard and crave variety in their workouts.
+                </p>
+                <p>
+                    Our mission is to change the way people live by transforming the fitness industry. Guardian Gym provides a revolutionary 
+                    training environment that focuses on our members' health and lifestyle, not just their physical appearance. 
+                    We want to create a community where people can get healthy together. We pride ourselves on getting
+                    results through carefully crafted programs, expertly designed spaces and equipment and great music!
+                </p>
+            </div>
+        </div>
+        <br><br><br><br><br>
+    </section>
+    <hr>
+
+    <section class="offers" id="offers">
+        <br><br><br><br><br>
+        <div class="heading">
+            <h1>Become a member!</h1>
+        </div>
+        <br><br><br><br><br>
+        <div class="box-container">
+            <div class="box">
+                <h3>Beginner Plan</h3>
+                <div class="amount"> 1,200 <span>/mo</span> </div>
+                <div class="list">
+                    <p> <i class="fas fa-check"></i> 24/7 gym </p>
+                    <p> <i class="fas fa-check"></i> free parking </p>
+                    <p> <i class="fas fa-check"></i> diet plan </p>
+                    <p> <i class="fas fa-check"></i> training plan </p>
+                    <p> <i class="fas fa-times" style="color: red;"></i> protein supplements </p>
+                    <p> <i class="fas fa-times" style="color: red;"></i> personal trainer </p>
+                </div>
+                <a href="register.html" class="btn">choose offer</a>
+            </div> 
+            <div class="box">
+                <h3>Intermediate Plan</h3>
+                <div class="amount"> 2,500 <span>/mo</span> </div>
+                <div class="list">
+                    <p> <i class="fas fa-check"></i> 24/7 gym </p>
+                    <p> <i class="fas fa-check"></i> free parking </p>
+                    <p> <i class="fas fa-check"></i> diet plan </p>
+                    <p> <i class="fas fa-check"></i> training plan </p>
+                    <p> <i class="fas fa-check"></i> protein supplements </p>
+                    <p> <i class="fas fa-times" style="color: red;"></i> personal trainer </p>
+                </div>
+                <a href="register.html" class="btn">choose offer</a>
+            </div>
+            <div class="box">
+                <h3>Advance Plan</h3>
+                <div class="amount"> 4,000 <span>/mo</span> </div>
+                <div class="list">
+                    <p> <i class="fas fa-check"></i> 24/7 gym </p>
+                    <p> <i class="fas fa-check"></i> free parking </p>
+                    <p> <i class="fas fa-check"></i> diet plan </p>
+                    <p> <i class="fas fa-check"></i> training plan </p>
+                    <p> <i class="fas fa-check"></i> protein supplements </p>
+                    <p> <i class="fas fa-check"></i> personal trainer </p>
+                </div>
+                <a href="register.html" class="btn">choose offer</a>
+            </div>
+        </div>
+        <br><br><br><br><br>
+    </section>
+    <hr>
+
+      <section class="contact" id="contact"><br>
+        <div class="row">
+            <form action="contact.php" method="post">
+                <h3>Contact Us</h3><br><br>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name" name="name" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email" name="email" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="phone" name="number" required>
+                </div>
+                <textarea name="message" placeholder="your message..." id="" cols="30" rows="10"></textarea>
+                <input type="submit" class="btn" value="Send">
+            </form>
+        </div>
+    </section>
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

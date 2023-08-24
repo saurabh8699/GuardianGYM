@@ -1,0 +1,156 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* background-color: rgb(40, 36, 36);   */
+    background-color: black;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    background-color: rgba(0,0,0, 0.3);
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.header .logo span {
+    color: yellow;
+}
+
+.header .logo i {
+    color: yellow;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color:  green;
+}
+
+.btn {
+    font-family: 'Nunito', sans-serif;
+    margin: 0px 9px;
+    background-color: red;
+    color: white;
+    padding: 4px 14px;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+.contact {
+    background-color: rgb(5, 5, 5); 
+    /* border: 2px solid green;  */
+} 
+
+.contact .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 5rem;
+}
+
+.contact .row form {
+    margin-block: auto;
+    border: 2px solid green;
+    padding: 500px;
+    margin: 250px;
+    margin-top: 7%;
+}
+
+.contact .row .map {
+    flex: 1 1 40rem;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 5rem 9rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.contact .row form .inputBox,
+.contact .row form textarea {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid green;
+    border-radius: .5rem;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+    width: 100%;
+    padding: 2rem 0;
+    font-size: 1.7rem;
+    color: white;
+    text-transform: none;
+    background: none;
+}
+
+.contact .row form textarea {
+    width: 100%;
+    height: 15rem;
+    resize: none;
+    padding-left: 3rem;
+}
+
+.contact .row form .inputBox span {
+    color: white;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+.contact .row form .btn {
+    background: none;
+    color: white;
+    border: 2px solid green;
+}
+
+.contact .row form .btn:hover {
+    background-color: green;
+}

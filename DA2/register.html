@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guardian Gym - Registration</title>
+    <link rel="stylesheet" href="register.css">
+
+</head>
+<body style="background-color: black;">     
+    <header class="header">
+        <a href="index.html" class="logo"><i class="fas fa-dumbbell"></i> Guardian<span>GYM</span></a>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <nav class="navbar">
+            <a href="home.html">home</a>
+            <a href="#about">about</a>
+            <!-- <a href="#features">features</a>
+            <a href="#offers">offers</a>
+            <a href="#reviews">reviews</a> -->
+            <a href="#contact">contact</a>
+        </nav>
+    </header>
+
+    <section class="contact" id="contact">
+            <div class="row">
+            <form action="register.php" method="post">
+                <h3>Register below</h3><br><br><br>
+                <div class="inputBox">
+                    <span class="fas fa-user"></span>
+                    <input type="text" placeholder="name" name="name" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-envelope"></span>
+                    <input type="email" placeholder="email" name="email" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-eye-slash"></span>
+                    <input type="password" placeholder="password" name="password" required>
+                </div>
+                <div class="inputBox">
+                    <span class="fas fa-phone"></span>
+                    <input type="number" placeholder="phone" name="phone" required>
+                </div>
+
+                <!-- <div class="inputBox"> -->
+                    <label style="color: white; font-size: 2em;">Select a plan  </label>
+                    <select name="plan" id="plan" style="color: white; padding: 5px; border: 1px solid green; font-size: 2em">
+                        <option value="beginner">Beginner</option>
+                        <option value="intermediate">Intermediate</option>
+                        <option value="advance">Advance</option>
+                    </select><br><br><br>
+                <!-- </div> -->
+
+                <!-- <textarea name="" placeholder="your message..." id="" cols="30" rows="10"></textarea> -->
+                <br><br>
+                <input type="submit" class="btn" value="Register">
+            </form>
+        </div>
+    </section>
+
+
+
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</body>
+</html>

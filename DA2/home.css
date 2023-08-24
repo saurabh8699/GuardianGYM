@@ -1,0 +1,295 @@
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    /* text-transform: capitalize;  */
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+section {
+    padding: 2rem 9%;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+    /* background-color: rgba(0, 0, 0, .3); */
+    background-color: rgba(74, 74, 63, 0.3);
+    box-shadow: var(--box-shadow);
+}
+
+.header .logo {
+    font-size: 2rem;
+    color: white;
+}
+
+.header .logo i {
+    color: yellow;
+}
+
+.header .navbar a {
+    font-size: 2rem;
+    color: white;
+    margin-left: 2rem;
+}
+
+.header .navbar a:hover {
+    color:  green;
+}
+
+.aboutUsSection {
+    background-color: #000814;
+    color: #ffffff;
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.aboutUsSection .aboutUsTitle {
+    margin-top: 70px;
+    font-weight: 500;
+    letter-spacing: 3px;
+    text-align: center;
+    font-size: 2em;
+    padding: 10px;
+    width: 200px;
+    border-top: 2px solid;
+}
+
+.aboutUsSection .textAndImg {
+    padding: 20px;
+    width: 90%;
+    height: 100%;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutUsSection .textAndImg .aboutUsText {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 20px;
+    font-size: 17px;
+}
+
+.aboutUsSection .textAndImg .aboutUsText p {
+    /* font-size: 1.22em; */
+    margin-bottom: 10px;
+}
+
+.aboutUsSection .textAndImg .aboutUsText p span {
+    /* font-family: logoFont; */
+    color: yellow;
+    font-weight: bolder;
+}
+
+.aboutUsSection .textAndImg .image {
+    width: 100%;
+    margin-right: 30px;
+}
+
+.aboutUsSection .textAndImg .image img {
+    width: 100%;
+    box-shadow: -5px 5px 0px #FFD60A;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+.aboutUsSection .logo {
+    font-size: 3.0rem;
+    font-weight: bolder;
+    color: white;
+}
+
+.aboutUsSection .logo span {
+    color: yellow;
+}
+
+.aboutUsSection .logo i {
+    color: yellow;
+}
+
+hr {
+    border-top: 1px solid green;
+}
+
+.offers {
+    background-color:  rgb(5, 5, 5);
+}
+
+.offers .heading {
+    font-size: 2rem;
+    font-weight: bolder;
+    color: yellow;
+    text-align: center;
+}
+
+.offers .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    gap: 2rem;
+}
+
+.offers .box-container .box {
+    text-align: center;
+    padding: 2rem;
+    border: 2px solid red;
+    border-radius: .5rem;
+}
+
+.offers .box-container .box:hover {
+    background-color: rgb(5, 5, 5);
+    transform: translateY(-3%);
+}
+
+.offers .box-container .box h3 {
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+}
+
+.offers .box-container .box .amount {
+    font-size: 4rem;
+    font-weight: 400;
+    color: green;
+    padding-top: .8rem;
+}
+
+.offers .box-container .box .amount span{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.offers .box-container .box .list {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+.offers .box-container .box .list p {
+    padding: 1.5rem 0;
+    font-size: 1.7rem;
+    color: white;
+}
+
+.offers .box-container .box .list p i {
+    color: green;
+}
+
+.offers .box-container .box .list p i.fa-times {
+    color: red;
+}
+
+.btn {
+    display: inline-block;
+    padding: .8rem 3rem;
+    border: 2px solid red;
+    color: black;
+    font-size: 1.7rem;
+    cursor: pointer;
+    border-radius: .5rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
+    margin-top: 1rem;
+    background-color: yellow;
+}
+
+.btn:hover {
+    background-color: green;
+}
+
+/* .contact { */
+    /* background-color: rgb(5, 5, 5); */
+/* } */
+
+.contact .row {
+    display: flex;  
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding-bottom: 5rem;
+}
+
+.contact .row .map {
+    flex: 1 1 40rem;
+    width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+
+.contact .row form {
+    flex: 1 1 40rem;
+    padding: 5rem 2rem;
+    text-align: center;
+}
+
+.contact .row form h3 {
+    color: white;
+    font-size: 3.5rem;
+}
+
+.contact .row form .inputBox,
+.contact .row form textarea {
+    display: flex;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid green;
+    border-radius: .5rem;
+}
+
+.contact .row form .inputBox input,
+.contact .row form textarea {
+    width: 100%;
+    padding: 2rem 0;
+    font-size: 1.7rem;
+    color: white;
+    text-transform: none;
+    background: none;
+}
+
+.contact .row form textarea {
+    width: 100%;
+    height: 15rem;
+    resize: none;
+    padding-left: 3rem;
+}
+
+.contact .row form .inputBox span {
+    color: white;
+    font-size: 2rem;
+    padding: 0 2rem;
+}
+
+.contact .row form .btn {
+    background: none;
+    color: white;
+}
+
+.contact .row form .btn:hover {
+    background-color: green;
+}
